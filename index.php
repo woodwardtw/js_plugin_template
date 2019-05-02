@@ -15,9 +15,9 @@ Text Domain: my-toolset
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );//helps keep out bad people
 
 
-add_action('wp_enqueue_scripts', 'prefix_load_scripts');
+add_action('wp_enqueue_scripts', 'super_unique_load_scripts');//loads the script below via that function
 
-function previx_load_scripts() {                           
+function super_unique_load_scripts() {                           
     $deps = array('jquery');// you can use jquery with this just remember to use jQuery instead of $ (or alias it)
     $version= '1.0'; 
     $in_footer = true;//loads in footer    
