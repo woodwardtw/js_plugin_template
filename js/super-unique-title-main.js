@@ -1,0 +1,1 @@
+console.log('hello');//erase after you feel confident about the javascript loading
